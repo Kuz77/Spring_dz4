@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+  <style>
+        body {
+            background-color: black;
+            animation: backgroundBlink 2s infinite;
+        }
+        @keyframes backgroundBlink {
+            0% { background-color: black; }
+            50% { background-color: #FF6997; }
+            100% { background-color: black; }
+        }
+        .result-wrapper {
+            text-align: center;
+            margin-top: 150px;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            font-size: 36px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div class="result-wrapper">
+  <h1 th:text="'Привет, ' + ${name} + '!'"></h1>
+  <img src="https://i.imgur.com/5jtrEYV.jpeg">
+</div>
+</body>
+</html>

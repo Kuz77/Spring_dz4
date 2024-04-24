@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+  <style>
+        body {
+            background-image: url('https://example.com/background-image.jpg'); /* Замените URL на ваше изображение */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .form-wrapper {
+            background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+            padding: 20px;
+            width: 300px;
+            margin: auto; /* Центрирование формы */
+            margin-top: 100px; /* Отступ от верхнего края */
+            text-align: center;
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        label, input {
+            display: block; /* Размещаем метки и поля ввода по вертикали */
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Зеленый цвет кнопки */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049; /* Темнозеленый цвет при наведении */
+        }
+    </style>
+</head>
+<body>
+<div class="form-wrapper">
+  <h1>Заполните форму</h1>
+  <form action="#" method="post">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <button type="submit">Отправить</button>
+  </form>
+</div>
+</body>
+</html>
+
